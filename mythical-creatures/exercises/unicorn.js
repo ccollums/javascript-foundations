@@ -1,7 +1,7 @@
 class Unicorn {
   constructor(name, color) {
     this.name = name;
-    if (color === undefined) {
+    if (this.color === undefined) {
       this.color = 'white';
     } else {
       this.color = color;
@@ -13,7 +13,7 @@ isWhite() {
   }
 }
 says(message) {
-  return `**;* ${message} *;**`; 
+  return `**;* ${message} *;**`;
 }
 }
 
