@@ -17,27 +17,27 @@ class Werewolf {
     }
   }
 
-  eatVictim(victim) {
-    if (this.form = 'wolf') {
-      victim.alive = false;
-      this.form = 'human';
-      console.log(this.form)
-      return `Yum, ${victim.name} was delicious.`;
-    } else if (this.form = 'human') {
-      return `No way am I eating ${victim.name}, I'd like a burger!`;
+  // eatVictim(victim) {
+  //   if (this.form = 'wolf') {
+  //     victim.alive = false;
+  //     this.form = 'human';
+  //     console.log(this.form)
+  //     return `Yum, ${victim.name} was delicious.`;
+  //   } else if (this.form = 'human') {
+  //     return `No way am I eating ${victim.name}, I'd like a burger!`;
+  //   }
+  //   }
+
+
+eatVictim(victim) {
+  if (this.form = 'human' && this.hungry === false) {
+    return `No way am I eating ${victim.name}, I'd like a burger!`;
+  } else if (this.form = 'wolf') {
+    victim.alive = false;
+    this.form = 'human';
+    return `Yum, ${victim.name} was delicious.`;
     }
-    }
-
-
-
-  // if (this.form = 'human') {
-  //   return `No way am I eating ${victim.name}, I'd like a burger!`;
-  // } else {
-  //   victim.alive = false;
-  //   this.form = 'human';
-  //   return `Yum, ${victim.name} was delicious.`;
-  // }
-  // }
+  }
 }
 
 
