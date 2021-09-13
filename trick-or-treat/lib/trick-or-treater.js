@@ -10,6 +10,12 @@ class TrickOrTreater {
     this.hasCandy = true;
     this.bag.candies.push(candy);
     this.countCandies++;
+    this.bag.count++;
+  }
+
+  eat() {
+    this.countCandies--;
+    this.bag.candies.splice(0,1);
   }
 }
 
