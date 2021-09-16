@@ -11,14 +11,13 @@ class Centaur {
   shootBow() {
     this.counter++;
     if (this.layingDown === true || this.counter >= 3) {
-    // if (this.counter >= 3 || this.layingDown === true) {
       this.cranky = true;
       return 'NO!';
     } else {
-    // } else if (this.standing === true) {
       return 'Twang!!!';
     }
   }
+
 
   run() {
     this.counter++;
@@ -33,6 +32,7 @@ class Centaur {
   sleep() {
     if (this.layingDown = true && !this.standing) {
       this.cranky = false;
+      this.counter = 0;
       return 'ZZZZ';
     } else {
     return 'NO!';
@@ -47,6 +47,7 @@ class Centaur {
   standUp() {
     this.standing = true;
     this.layingDown = false;
+    this.cranky = false;
   }
 
   drinkPotion() {
